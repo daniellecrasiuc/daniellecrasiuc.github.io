@@ -16,7 +16,7 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     h1 {
-        
+
         color: dimgray;
         text-align: center;
 
@@ -26,14 +26,14 @@
         color: rgb(178, 179, 136);
         text-align: center;
         font-size: 15px;
-        
+
     }
     div{
-       
+
         text-align: center;
         margin:auto;
         padding 30px;
-       
+
     }
     p{
         opacity: .75;
@@ -41,50 +41,50 @@
     }
     header{
         background: whitesmoke;
-       
-        
+
+
         margin: 0;
         padding: 30px;
     }
     section{
-        
-        
+
+
         background: rgb(232, 232, 232);
         color:  dark gray;
-        
+
         margin: 30px 15px 30px 15px;
         padding: 30px;
-       
-        
-        
-        
-        
+
+
+
+
+
     }
     footer{
         background: whitesmoke;
-    
+
         margin: 0;
         padding: 30px;
     }
-    
+
     ul{
-     list-style-type: none; 
+     list-style-type: none;
      margin: 0;
      padding:0;
      line
 
-     
+
     }
-    
+
     li{
         display: inline-flex;
         background: transparent;
         color:grey;
-       
+
         padding: 50;
         padding-right: 2.5em;
         padding-bottom: 3em;
-       margin: 0; 
+       margin: 0;
     }
     a{
         color:inherit;
@@ -96,7 +96,7 @@
     .circle{
         text-align: center;
         opacity: .75;
-    
+
         width: 150px;
   height: 100px;
   border-radius: 50%;
@@ -105,41 +105,84 @@
   line-height: 100px;
   text-align: center;
   background:rgb(178, 179, 136);
-  
+
     }
+    .header {
+
+      padding: 5px 5px;
+      background:whitesmoke;
+      width:100%
+
+    }
+    header{
+      padding: 20px;
+      background: whitesmoke;
+    }
+
+    .content {
+      padding: 0px;
+
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width:100%
+
+    }
+    .sticky + .content {
+      padding-top: 300px;
+    }
+    html {
+      --top-spacing: 200px;
+       scroll-padding-top: var(--top-spacing);
+    }
+    .parallax{
+ background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/43858hd.jpg);
+ min-height: 100px;
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    .top-container {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="aboutMe.html">About Me</a></li>
-            </ul>
-        </nav>
-        
-        <h1 style="color: rgb(178, 179, 136);"></strong> Danielle Crasiuc</h1>
-        
-        <div  class ="circle" style="margin-left: 45%;"> DC </div> 
-        <h2>Detroit, MI |  <a href="mailto:daniellecrasiuc@gmail.com">daniellecrasiuc@gmail.com</a></h2>
-       
-    </header>
-    
-        <section style="background-color: transparent; display:flex; flex-direction:row;"> 
+  <div class="parallax">
+      <div class="top-container"></div>
+  <header>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="experience.html">Experience</a></li>
+                  <li><a href="skills.html">Skills</a></li>
+      
+              </ul>
+          </nav>
+          <h1><strong>Danielle Crasiuc</strong> </h1>
+          <h2>Detroit, MI |  <a href="mailto:daniellecrasiuc@gmail.com">daniellecrasiuc@gmail.com</a></h2>
+
+      </header>
+
+
+        <section style="background-color: transparent; display:flex; flex-direction:row;">
             <div style=" width :50%;background-color: rgb(232, 232, 232); padding:10%; margin: auto;">
-            <h1 style="text-align: left;">Experience</h1> 
+            <h1 style="text-align: left;">Experience</h1>
             <h2 style="text-align: left;opacity: 1;"> Filip Architectural Design | <em>04/2017- 08/2019</em></h2>
             <h3 style="text-align: left; color:rgb(178, 179, 136);opacity:.5; font-size:13px;">Project Specialist</h3>
-          
+
             <p style=" text-align: left;font-size:12px;padding-bottom: 40px;"> My time working as a project specialist entailed preparing contract and quotes based on blue prints and then presenting those to customers. I honed in on communication skills by frequently meeting with clients and developing various organizational systems based on the team I was with per project. I was able to enhance the traceablity of documents and learned valuable skills such as time management, and the value of being detail oriented.
             </p>
             <h2 style="text-align: left;opacity: 1;"> Good News Gang | <em>08/2017- 06/2019</em></h2>
             <h3 style="text-align: left; color:rgb(178, 179, 136);opacity:.5; font-size:13px;">Tutor Volunteer</h3>
             <p style=" text-align: left;font-size:12px;padding-bottom: 40px;">I volunteered as a tutor and mentor for the children of inner city Detroit. This required assessing educational needs and incorporating fun and exciting activities to improve students' reading skills. We met weekly and set as well as adjusted goals based on progress.</p>
         </div>
-        
+
         <div style="   width:50%; background-color: rgb(232, 232, 232); padding:10%; padding-bottom: 20%; padding-top: 20; margin: 30px 15px 30px 15px;">
                <h1 style="text-align: left;">Education</h1>
                <h2 style="text-align: left;opacity: 1;"> University of Michigan - Ann Arbor | Ann Arbor, MI</h2>
@@ -150,9 +193,22 @@
                <p style=" text-align: left;font-size: 9px; padding-bottom: 40px;"><em>  06/2019</p>
                </div>
             </section>
-        
-    
- 
+
+
+            <script>
+                window.onscroll = function() {myFunction()};
+
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
     <footer>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -164,8 +220,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <button><i class="fa fa-map-marker"></i> Detroit,MI</button> 
-       <button><a href="mailto:daniellecrasiuc@gmail.com"><i class="fa fa-envelope"></i></a> daniellecrasiuc@gmail.com</button> 
+       <button><i class="fa fa-map-marker"></i> Detroit,MI</button>
+       <button><a href="mailto:daniellecrasiuc@gmail.com"><i class="fa fa-envelope"></i></a> daniellecrasiuc@gmail.com</button>
        <button><a href="https://www.linkedin.com/in/danielle-crasiuc-64343a196"><i class='fab fa-linkedin'></i></a> </button>
        <button><a href="https://www.facebook.com/danielle.crasiuc"><i class='fab fa-facebook-square'></i></a></button>
        <button><a href="https://github.com/daniellecrasiuc"><i class='fab fa-github'></i></a> daniellecrasiuc</button>
@@ -173,6 +229,6 @@
        <button><a href="Resume.pdf" download><i class='fas fa-file-download'></i></a> download my resume</button>
 
     </footer>
- 
+</div>
 </body>
 </html>
